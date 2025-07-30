@@ -1,4 +1,5 @@
 {
+  "name": "agricultural-ai-predictor-2024",
   "version": 2,
   "builds": [
     {
@@ -12,11 +13,6 @@
       "dest": "api/app.py"
     }
   ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "MONGODB_DB_NAME": "@mongodb_db_name",
-    "FRONTEND_URL": "@frontend_url"
-  },
   "functions": {
     "api/app.py": {
       "maxDuration": 10
