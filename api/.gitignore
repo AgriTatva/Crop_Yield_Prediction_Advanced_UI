@@ -1,0 +1,14 @@
+# Don't ignore model files for deployment
+!*.pkl
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local environment files
+.env
+
+# Ignore logs
+*.log
