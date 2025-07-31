@@ -23,7 +23,7 @@ This document explains how to connect to the shared MongoDB database for our Cro
    ```
    python -m backend.app
    ```
-   Or visit `http://localhost:5000/check-db` after starting the app
+   Or visit `https://crop-yield-prediction-advanced-ui.onrender.com/check-db` after starting the app
 
 ## Option 2: Self-hosted MongoDB
 

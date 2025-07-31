@@ -61,7 +61,7 @@ function CropYieldForm({ goToHome }) {
         email: email
       };
       
-      const response = await axios.post('http://localhost:5000/predict', requestData, {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/predict`, requestData, {
         headers: {
           'Content-Type': 'application/json'
         }

@@ -54,4 +54,5 @@ ENV/
 .vscode/
 *.swp
 *.swo
+frontend/node_modules/
 

@@ -22,8 +22,8 @@ const ForgotPassword = () => {
     setIsError(false);
     
     try {
-      const response = await axios.post('http://localhost:5000/forgot-password', { email });
-      
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/forgot-password`, { email });
+
       if (response.data.success) {
         setResetSent(true);
         setMessage('Password reset link generated successfully.');

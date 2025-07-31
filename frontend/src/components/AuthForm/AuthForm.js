@@ -31,7 +31,7 @@ const AuthForm = ({ goToHome }) => {
       if (isLogin) {
         // Login logic
         if (formData.email && formData.password) {
-          const response = await fetch('http://localhost:5000/login', {
+          const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const AuthForm = ({ goToHome }) => {
         }
         
         if (formData.email && formData.password && formData.name) {
-          const response = await fetch('http://localhost:5000/register', {
+          const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/register`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ const AuthForm = ({ goToHome }) => {
   // Then include it in your prediction API call
   const submitPrediction = async (predictionData) => {
     try {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -67,7 +67,7 @@ To test your MongoDB Atlas connection:
 
 2. Visit `/check-db` endpoint to verify the connection:
    ```
-   http://localhost:5000/check-db
+   https://crop-yield-prediction-advanced-ui.onrender.com/check-db
    ```
 
 ## Database Organization
