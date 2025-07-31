@@ -101,8 +101,9 @@ except Exception as e:
 
 # Flask app
 app = Flask(__name__, 
-           static_folder=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'static'),
-           template_folder=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'templates'))
+           static_folder='static',
+           template_folder='templates')
+
 CORS(app)  # Enable CORS for all routes
 
 def generate_stable_user_id(email):
